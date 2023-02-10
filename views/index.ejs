@@ -1,8 +1,39 @@
 <%- include('./partials/head') %>
 
-<article>
-  <h1>Hallo wereld!</h1>
-  <p>Alles werk! Laat dit visitekaartje in je browser aan een docent zien :D</p>
-</article>
+<!-- <h1><%- member.name %> </h1>
+<h2><%- member.prefix %> </h2>
+<h2><%- member.surname %> </h2> -->
+
+<header>
+  <img class="imgUtrecht1" src="/assets/PhotoUtrecht.jpeg" alt="Foto Utrecht">
+    <div class="headerText"> 
+       <h1><%- member.name %> </h1>
+        <h2><%- member.prefix %> <%- member.surname %> </h2>
+    </div>
+    
+    <div class="scrollDown">
+      <button class="scrollDownButton">\/</button>
+    </div>
+</header>
+
+<section class="section2">
+  <div class="card">
+    <img src="<%-member.avatar%>" alt="">
+  </div>
+
+
+</section>
+
+
+
+
+<!-- <div class="card">
+  <div class="profilePicturePlaceHolder">
+    <img src="/assets/IMG_3009.jpg" alt="profiel foto Chris" class="profilePicture">
+  </div>
+  <h3> Chris van der Horst</h3>
+  
+  
+</div> -->
 
 <%- include('./partials/foot') %>

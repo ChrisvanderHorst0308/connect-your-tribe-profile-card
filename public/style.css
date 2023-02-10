@@ -6,51 +6,110 @@ body {
   width: 100vw;
   height: 100vh;
   font-family: Helvetica, Arial, sans-serif;
-  display: flex;
-  flex-flow: column nowrap;
+  background-color: gray;
+  color: white;
+
   justify-content: center;
   align-items: center;
-  background: rgba(188, 105, 138, 0.5);
+  /* background: rgba(188, 105, 138, 0.5);
   background-image: radial-gradient(circle at bottom left, rgba(255, 255, 0, 0.9), rgba(255, 255, 0, 0) 70%),
     radial-gradient(circle at top left, rgba(255, 0, 0, 1), rgba(255, 0, 0, 0) 70%),
     radial-gradient(circle at center right, rgba(255, 0, 255, 0.8), rgba(255, 0, 255, 0) 50%);
   background-size: 200% 200%;
-  animation: movement 30s ease infinite alternate-reverse;
+  animation: movement 30s ease infinite alternate-reverse; */
 }
 
-@keyframes movement {
-  0% {
-    background-position: 0% 0%;
-  }
-  25% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  75% {
-    background-position: 50% 100%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
+/* header====== */
+header {
+  width: auto;
+  height: 100vh;
+    
+  justify-content: center; 
+  align-items: center;
+  display: flex;
+    text-align: center;
+    border-bottom: solid;
+    border-bottom-width: 0.5px;
 }
 
-article {
-  padding: 1rem;
-  width: 40vw;
-  height: 22vw;
-  color: white;
+header > img {
+  height: 100%;width: -webkit-fill-available;
+  position: fixed;z-index: -1;
+  margin: 0;
+  
 
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.06);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5.8px);
-  -webkit-backdrop-filter: blur(5.8px);
-  border: 1px solid rgba(255, 255, 255, 0.27);
+  
 }
 
-h1 {
+.imgUtrecht1 {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(9 0%);
+}
+
+
+.headerText {
+  border-width: 1px;
+  border-style: solid;
+  padding: 5%;
+}
+
+.scrolldownButton {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border: 2px solid #FFF;}
+
+
+/* section 2 ====== */
+.section2 {
+  width: auto;
+  height: 100vh;
+  /* background-color: red; */
+    
+  justify-content: center; 
+  align-items: center;
+  display: flex;
   text-align: center;
 }
+
+.section2 {
+  height: 100%;width: -webkit-fill-available;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0px;
+  background-image: url(https://i.pinimg.com/originals/a1/4e/26/a14e261df08204151ad9f195dbaa846e.jpg);
+}
+
+.card {
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.14);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+border: 1px solid rgba(255, 255, 255, 0.37);/* From https://css.glass */
+background: rgba(255, 255, 255, 0.14);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+border: 1px solid rgba(255, 255, 255, 0.37);
+
+
+  width: 40vh;
+  border-style: solid;
+  padding: 3em;
+  font: 1em sans-serif;
+}
+
+.avatar {
+  background-image: url();
+}
+
+
+
+
