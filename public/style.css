@@ -106,8 +106,9 @@ border: 1px solid rgba(255, 255, 255, 0.37);
   font: 1em sans-serif;
 }
 
-.avatar {
-  background-image: url();
+.profilePicture {
+  width: 8em;
+  height: auto;
 }
 
 
